@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Inicio"
+    android:background="@color/fondo"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/regreso_administrador"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/flecha_de_regreso"
+
+
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Administrador"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/config_administrador"
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/conf"
+            android:clickable="true"
+            android:focusable="true"
+
+
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:id="@+id/regreso_uduario"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:src="@drawable/adulto"
+                android:layout_margin="30dp"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginStart="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Nombre : "
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="sans-serif-medium"/>
+                    <TextView
+                        android:id="@+id/inscrip_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Brian "
+                        android:textSize="18sp"
+                        android:layout_marginBottom="8dp"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Apellido Paterno"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="sans-serif-medium"/>
+                    <TextView
+                        android:id="@+id/inscrip_apellido_paterno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Hernandez "
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="ApellidoMaterno : "
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="sans-serif-medium"/>
+                    <TextView
+                        android:id="@+id/inscrip_apellido_materno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Hernandez"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Institucion"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="sans-serif-medium"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="ITSOEH"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Id"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="sans-serif-medium"/>
+                    <TextView
+                        android:id="@+id/inscrip_id_administrador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="1324354657"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="Genero : "
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <TextView
+                        android:id="@+id/inscrip_administrador_genero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="helicoptero"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+
+            android:orientation="vertical"
+            android:padding="15dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adm_card_carreras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="4dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="@color/fondo"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_gravity="center">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Carreras"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="130dp"
+                        />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adm_card_asignaturas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="4dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="@color/fondo"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_gravity="center">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Asignaturas"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="130dp"
+                        />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adm_card_Docentes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="4dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="@color/fondo"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_gravity="center">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Docentes"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="130dp"
+                        />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adm_card_Estudiantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="4dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="@color/fondo"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_gravity="center">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estudiantes"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="130dp"
+                        />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adm_card_periodos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="4dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="@color/fondo"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_gravity="center">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Periodos"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="130dp"
+                        />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adm_card_grupos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="4dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="@color/fondo"
+                >
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adm_card_papas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="4dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="@color/fondo"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_gravity="center">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Padres de familia"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="100dp"
+                        />
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

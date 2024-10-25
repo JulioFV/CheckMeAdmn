@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/inicio">
+
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.bherher.administrador.Inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicio_to_asignaturas"
+            app:destination="@id/asignaturas" />
+        <action
+            android:id="@+id/action_inicio_to_carreras"
+            app:destination="@id/carreras" />
+        <action
+            android:id="@+id/action_inicio_to_docentes"
+            app:destination="@id/docentes" />
+        <action
+            android:id="@+id/action_inicio_to_padres"
+            app:destination="@id/padres" />
+        <action
+            android:id="@+id/action_inicio_to_periodos"
+            app:destination="@id/periodos" />
+        <action
+            android:id="@+id/action_inicio_to_grupos"
+            app:destination="@id/grupos" />
+        <action
+            android:id="@+id/action_inicio_to_estudiantes"
+            app:destination="@id/estudiantes" />
+        <action
+            android:id="@+id/action_inicio_to_configuraciones"
+            app:destination="@id/configuraciones" />
+    </fragment>
+    <fragment
+        android:id="@+id/configuraciones"
+        android:name="com.bherher.administrador.configuraciones"
+        android:label="fragment_configuraciones"
+        tools:layout="@layout/fragment_configuraciones" />
+    <fragment
+        android:id="@+id/carreras"
+        android:name="com.bherher.administrador.carreras"
+        android:label="fragment_carreras"
+        tools:layout="@layout/fragment_carreras" />
+    <fragment
+        android:id="@+id/asignaturas"
+        android:name="com.bherher.administrador.asignaturas"
+        android:label="fragment_asignaturas"
+        tools:layout="@layout/fragment_asignaturas" >
+        <action
+            android:id="@+id/action_asignaturas_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/docentes"
+        android:name="com.bherher.administrador.docentes"
+        android:label="fragment_docentes"
+        tools:layout="@layout/fragment_docentes" />
+    <fragment
+        android:id="@+id/estudiantes"
+        android:name="com.bherher.administrador.estudiantes"
+        android:label="fragment_estudiantes"
+        tools:layout="@layout/fragment_estudiantes" />
+    <fragment
+        android:id="@+id/periodos"
+        android:name="com.bherher.administrador.periodos"
+        android:label="fragment_periodos"
+        tools:layout="@layout/fragment_periodos" />
+    <fragment
+        android:id="@+id/grupos"
+        android:name="com.bherher.administrador.grupos"
+        android:label="fragment_grupos"
+        tools:layout="@layout/fragment_grupos" />
+    <fragment
+        android:id="@+id/padres"
+        android:name="com.bherher.administrador.padres"
+        android:label="fragment_padres"
+        tools:layout="@layout/fragment_padres" />
+</navigation>

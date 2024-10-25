@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Administrador</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="genero">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Helicoptero</item>
+    </string-array>
+</resources>
