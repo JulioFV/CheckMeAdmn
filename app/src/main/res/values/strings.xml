@@ -8,4 +8,48 @@
         <item>Femenino</item>
         <item>Helicoptero</item>
     </string-array>
+    <string-array name="carrsp">
+        <item>TO1</item>
+        <item>TO2</item>
+        <item>TO3</item>
+        <item>TO4</item>
+
+    </string-array>
+    <string-array name="asignsp">
+        <item>TO1</item>
+        <item>TO2</item>
+        <item>TO3</item>
+        <item>TO4</item>
+
+    </string-array>
+    <string-array name="docsp">
+        <item>TO1</item>
+        <item>TO2</item>
+        <item>TO3</item>
+        <item>TO4</item>
+
+    </string-array>
+    <string-array name="estsp">
+        <item>TO1</item>
+        <item>TO2</item>
+        <item>TO3</item>
+        <item>TO4</item>
+
+    </string-array>
+    <string-array name="padsp">
+        <item>TO1</item>
+        <item>TO2</item>
+        <item>TO3</item>
+        <item>TO4</item>
+
+    </string-array>
+    <string-array name="persp
+">
+        <item>TO1</item>
+        <item>TO2</item>
+        <item>TO3</item>
+        <item>TO4</item>
+
+    </string-array>
+
 </resources>

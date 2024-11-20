@@ -93,7 +93,7 @@
                         android:layout_marginBottom="8dp"
                         android:fontFamily="sans-serif-medium"/>
                     <TextView
-                        android:id="@+id/inscrip_nombre"
+                        android:id="@+id/adm_nombre"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
@@ -121,7 +121,7 @@
                         android:layout_marginBottom="8dp"
                         android:fontFamily="sans-serif-medium"/>
                     <TextView
-                        android:id="@+id/inscrip_apellido_paterno"
+                        android:id="@+id/adm_apellido_paterno"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
@@ -149,7 +149,7 @@
                         android:layout_marginBottom="8dp"
                         android:fontFamily="sans-serif-medium"/>
                     <TextView
-                        android:id="@+id/inscrip_apellido_materno"
+                        android:id="@+id/adm_apellido_materno"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
@@ -177,13 +177,14 @@
                         android:layout_marginBottom="8dp"
                         android:fontFamily="sans-serif-medium"/>
                     <TextView
-
+                        android:id="@+id/adm_institucion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:text="ITSOEH"
                         android:textSize="15sp"
                         android:layout_marginBottom="8dp"
+
 
                         android:fontFamily="sans-serif-medium"
                         android:textColor="@color/black"/>
@@ -205,7 +206,7 @@
                         android:layout_marginBottom="8dp"
                         android:fontFamily="sans-serif-medium"/>
                     <TextView
-                        android:id="@+id/inscrip_id_administrador"
+                        android:id="@+id/id_administrador"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
@@ -234,7 +235,7 @@
                         android:fontFamily="sans-serif-medium"/>
 
                     <TextView
-                        android:id="@+id/inscrip_administrador_genero"
+                        android:id="@+id/administrador_genero"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
@@ -267,258 +268,187 @@
 
 
 </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="15dp">
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- Mi Perfil Card -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/adm_card_carreras"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="@color/fondo"
 
-                android:layout_margin="5dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:elevation="4dp"
-                app:cardCornerRadius="40dp"
-                app:cardBackgroundColor="@color/fondo"
-                >
-                <LinearLayout
+                android:id="@+id/adm_card_carreras">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/carreras"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/btnMyProfile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:layout_gravity="center">
-
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Carreras"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:layout_marginLeft="130dp"
-                        />
-                </LinearLayout>
-
+                    android:text="Carreras"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:padding="16dp"
+                    android:gravity="center"/>
 
             </androidx.cardview.widget.CardView>
+
+            <!-- Mis Grupos Card -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/adm_card_asignaturas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="@color/fondo"
 
+                    android:id="@+id/adm_card_asignaturas">
 
-
-                android:layout_margin="5dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:elevation="4dp"
-                app:cardCornerRadius="40dp"
-                app:cardBackgroundColor="@color/fondo"
-                >
-                <LinearLayout
+                <TextView
+                    android:id="@+id/btnMyGroups"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="Asignaturas"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
 
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:layout_gravity="center">
-
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Asignaturas"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:layout_marginLeft="130dp"
-                        />
-                </LinearLayout>
-
-
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/asignatura"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="5dp"/>
             </androidx.cardview.widget.CardView>
+
+            <!-- Pase de Lista Card -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/adm_card_Docentes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/fondo"
 
+                android:id="@+id/adm_card_Docentes">
 
-
-                android:layout_margin="5dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:elevation="4dp"
-                app:cardCornerRadius="40dp"
-                app:cardBackgroundColor="@color/fondo"
-                >
-                <LinearLayout
+                <TextView
+                    android:id="@+id/btnAttendance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:layout_gravity="center">
-
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Docentes"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:layout_marginLeft="130dp"
-                        />
-                </LinearLayout>
-
-
+                    android:text="Docentes"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:padding="16dp"
+                    android:gravity="center"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/docente"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"/>
             </androidx.cardview.widget.CardView>
+
+            <!-- Mis Tutorados Card -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/adm_card_Estudiantes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="@color/fondo"
 
+                android:id="@+id/adm_card_Estudiantes">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/avatar"
+                    android:layout_marginLeft="350dp"/>
 
+                <TextView
 
-                android:layout_margin="5dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:elevation="4dp"
-                app:cardCornerRadius="40dp"
-                app:cardBackgroundColor="@color/fondo"
-                >
-                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:layout_gravity="center">
-
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Estudiantes"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:layout_marginLeft="130dp"
-                        />
-                </LinearLayout>
-
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="Estudiantes"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
 
             </androidx.cardview.widget.CardView>
+
+            <!-- Agregar Tutorados Card -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/adm_card_periodos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="@color/fondo"
 
+                android:id="@+id/adm_card_periodos">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/periodo"
+                    android:layout_marginLeft="10dp"/>
 
+                <TextView
 
-                android:layout_margin="5dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:elevation="4dp"
-                app:cardCornerRadius="40dp"
-                app:cardBackgroundColor="@color/fondo"
-                >
-                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:layout_gravity="center">
-
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Periodos"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:layout_marginLeft="130dp"
-                        />
-                </LinearLayout>
-
+                    android:text="Periodos"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:padding="16dp"
+                    android:gravity="center"/>
 
             </androidx.cardview.widget.CardView>
+            <!-- Agregar Tutorados Card -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/adm_card_grupos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="@color/fondo"
 
+                android:id="@+id/adm_card_papas">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/padres"
+                    android:layout_marginLeft="350dp"/>
 
+                <TextView
 
-                android:layout_margin="5dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:elevation="4dp"
-                app:cardCornerRadius="40dp"
-                app:cardBackgroundColor="@color/fondo"
-                >
-
-
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/adm_card_papas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-
-
-                android:layout_margin="5dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:elevation="4dp"
-                app:cardCornerRadius="40dp"
-                app:cardBackgroundColor="@color/fondo"
-                >
-                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:layout_gravity="center">
-
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Padres de familia"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:layout_marginLeft="100dp"
-                        />
-                </LinearLayout>
-
-
-
+                    android:text="Padres de Familia"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:padding="16dp"
+                    android:gravity="center"/>
 
             </androidx.cardview.widget.CardView>
-
-
-
 
         </LinearLayout>
+
+        <!-- Sección de botones (CardViews) -->
+
+
 
     </LinearLayout>
 </LinearLayout>

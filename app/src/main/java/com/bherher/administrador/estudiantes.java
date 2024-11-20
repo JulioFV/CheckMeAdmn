@@ -2,11 +2,25 @@ package com.bherher.administrador;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageView;
+
+import com.bherher.administrador.adapter.AdapterDocente;
+import com.bherher.administrador.modelo.MDocente;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +28,52 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class estudiantes extends Fragment {
+
+    private EditText txtFiltro;
+    private AdapterDocente adapter;
+    private ArrayList<MDocente> lista;
+    private Bundle paquete;
+    private RecyclerView rec;
+    private NavController navegador;
+    private ImageView btnAgregarEstudiante;
+
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle  savedInstanceState){
+    super.onViewCreated(view, savedInstanceState);
+    txtFiltro = view.findViewById(R.id.Est_txt_filtro);
+    btnAgregarEstudiante = view.findViewById(R.id.Est_btn_addEstudiante);
+    navegador = Navigation.findNavController(view);
+    btnAgregarEstudiante.setOnClickListener(new View.OnClickListener() {p
+        @Override
+        public void onClick(View v) {
+            clicAddEst();
+        }
+    });
+        txtFiltro.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                buscador(s.toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+        rec=view.findViewById(R.id.recycler_view_Estudiantes);
+
+        lista=llenadoDesdeBD();
+    }
+
+    private void clicAddEst() {
+    }
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

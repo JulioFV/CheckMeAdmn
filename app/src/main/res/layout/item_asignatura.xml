@@ -19,7 +19,7 @@
 
 
             <ImageView
-                android:id="@+id/item_asig_editar"
+                android:id="@+id/item_Est_editar"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
 
@@ -28,7 +28,7 @@
                 android:layout_marginTop="20dp"
                 android:src="@drawable/lapiz" />
             <ImageView
-                android:id="@+id/item_asig_eliminar"
+                android:id="@+id/item_Est_eliminar"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
 

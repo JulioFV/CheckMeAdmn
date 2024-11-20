@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,102 +12,131 @@
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:padding="8dp"
-        android:gravity="center_vertical">
-        <ImageView
-            android:id="@+id/regreso_administrador"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/flecha_de_regreso"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        >
 
-
-            android:layout_marginStart="8dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Periodos    "
-            android:fontFamily="sans-serif-medium"
-            android:textSize="24sp"
-            android:textColor="@color/black"
-            android:layout_marginLeft="70dp"/>
-
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/fondo_2"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="left"
-            android:padding="16dp"
-            android:layout_gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Estudiante: "
-                android:layout_marginLeft="50dp"
-                android:textSize="20sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:text="Nombre Apellidos "
-                android:textSize="20sp"/>
-
-        </LinearLayout>
         <androidx.cardview.widget.CardView
-            android:layout_width="370dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:elevation="4dp"
-            app:cardCornerRadius="40dp" >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="50dp"
 
+            >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:background="@color/azul2">
 
-                <EditText
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_weight="0.8"
-                    android:text="Entrar"
-                    android:id="@+id/frg_grupo_txtbuscar"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
+                >
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="24dp"
-                    android:layout_weight="0.2"
-                    android:src="@drawable/cuenta" />
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/periodo"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="30dp"
+
+                    >
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/fondo_text"
+                        android:hint="Nombre o Periodo"
+                        android:id="@+id/per_txt_filtro"
+                        android:textColorHint="@color/black"
+                        android:textAlignment="center"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/lupa"
+
+                        android:id="@+id/per_btn_buscar"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view_periodo"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"/>
+
+
+                </LinearLayout>
             </LinearLayout>
+
+
         </androidx.cardview.widget.CardView>
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_marginTop="10dp"
-            android:id="@+id/frg_recycler_periodo"
-            android:layout_width="match_parent"
-            android:background="@color/fondo"
-            android:layout_height="match_parent"
-
-            android:padding="8dp"/>
-
     </LinearLayout>
+    <!--COMIENZA LA ISLA DE BOTONES -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/azul2"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/mas"
+                android:id="@+id/adm_btn_addper"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/avatar"
+                android:id="@+id/adm_btn_perfil"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/main_menu"
+                android:id="@+id/adm_btn_menu"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <!--TERMINA LA ISLA DE BOTONES -->
 
 
 </LinearLayout>

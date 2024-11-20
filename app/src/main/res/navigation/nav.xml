@@ -44,7 +44,14 @@
         android:id="@+id/carreras"
         android:name="com.bherher.administrador.carreras"
         android:label="fragment_carreras"
-        tools:layout="@layout/fragment_carreras" />
+        tools:layout="@layout/fragment_carreras" >
+        <action
+            android:id="@+id/action_carreras_to_inicio"
+            app:destination="@id/inicio" />
+        <action
+            android:id="@+id/action_carreras_to_frg_agregar_carrera"
+            app:destination="@id/frg_agregar_carrera" />
+    </fragment>
     <fragment
         android:id="@+id/asignaturas"
         android:name="com.bherher.administrador.asignaturas"
@@ -53,30 +60,140 @@
         <action
             android:id="@+id/action_asignaturas_to_inicio"
             app:destination="@id/inicio" />
+        <action
+            android:id="@+id/action_asignaturas_to_frg_agregar_asignatura"
+            app:destination="@id/frg_agregar_asignatura" />
     </fragment>
     <fragment
         android:id="@+id/docentes"
         android:name="com.bherher.administrador.docentes"
         android:label="fragment_docentes"
-        tools:layout="@layout/fragment_docentes" />
+        tools:layout="@layout/fragment_docentes" >
+        <action
+            android:id="@+id/action_docentes_to_inicio"
+            app:destination="@id/inicio" />
+        <action
+            android:id="@+id/action_docentes_to_frg_agregar_docente"
+            app:destination="@id/frg_agregar_docente" />
+    </fragment>
     <fragment
         android:id="@+id/estudiantes"
         android:name="com.bherher.administrador.estudiantes"
         android:label="fragment_estudiantes"
-        tools:layout="@layout/fragment_estudiantes" />
+        tools:layout="@layout/fragment_estudiantes" >
+        <action
+            android:id="@+id/action_estudiantes_to_inicio"
+            app:destination="@id/inicio" />
+        <action
+            android:id="@+id/action_estudiantes_to_frg_AgregarEstudiantes"
+            app:destination="@id/frg_AgregarEstudiantes" />
+    </fragment>
     <fragment
         android:id="@+id/periodos"
         android:name="com.bherher.administrador.periodos"
         android:label="fragment_periodos"
-        tools:layout="@layout/fragment_periodos" />
+        tools:layout="@layout/fragment_periodos" >
+        <action
+            android:id="@+id/action_periodos_to_inicio"
+            app:destination="@id/inicio" />
+        <action
+            android:id="@+id/action_periodos_to_frg_agregar_periodos"
+            app:destination="@id/frg_agregar_periodos" />
+    </fragment>
     <fragment
         android:id="@+id/grupos"
         android:name="com.bherher.administrador.grupos"
         android:label="fragment_grupos"
-        tools:layout="@layout/fragment_grupos" />
+        tools:layout="@layout/fragment_grupos" >
+        <action
+            android:id="@+id/action_grupos_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
     <fragment
         android:id="@+id/padres"
         android:name="com.bherher.administrador.padres"
         android:label="fragment_padres"
-        tools:layout="@layout/fragment_padres" />
+        tools:layout="@layout/fragment_padres" >
+        <action
+            android:id="@+id/action_padres_to_inicio"
+            app:destination="@id/inicio" />
+        <action
+            android:id="@+id/action_padres_to_frg_agregar_padres"
+            app:destination="@id/frg_agregar_padres" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_AgregarEstudiantes"
+        android:name="com.bherher.administrador.frg_AgregarEstudiantes"
+        android:label="fragment_frg__agregar_estudiantes"
+        tools:layout="@layout/fragment_frg__agregar_estudiantes" >
+        <action
+            android:id="@+id/action_frg_AgregarEstudiantes_to_estudiantes"
+            app:destination="@id/estudiantes" />
+        <action
+            android:id="@+id/action_frg_AgregarEstudiantes_to_inicio"
+            app:destination="@id/inicio" />
+        <action
+            android:id="@+id/action_frg_AgregarEstudiantes_to_estudiantes2"
+            app:destination="@id/estudiantes" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_agregar_asignatura"
+        android:name="com.bherher.administrador.frg_agregar_asignatura"
+        android:label="fragment_frg_agregar_asignatura"
+        tools:layout="@layout/fragment_frg_agregar_asignatura" >
+        <action
+            android:id="@+id/action_frg_agregar_asignatura_to_asignaturas"
+            app:destination="@id/asignaturas" />
+        <action
+            android:id="@+id/action_frg_agregar_asignatura_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_agregar_carrera"
+        android:name="com.bherher.administrador.frg_agregar_carrera"
+        android:label="fragment_frg_agregar_carrera"
+        tools:layout="@layout/fragment_frg_agregar_carrera" >
+        <action
+            android:id="@+id/action_frg_agregar_carrera_to_carreras"
+            app:destination="@id/carreras" />
+        <action
+            android:id="@+id/action_frg_agregar_carrera_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_agregar_docente"
+        android:name="com.bherher.administrador.frg_agregar_docente"
+        android:label="fragment_frg_agregar_docente"
+        tools:layout="@layout/fragment_frg_agregar_docente" >
+        <action
+            android:id="@+id/action_frg_agregar_docente_to_docentes"
+            app:destination="@id/docentes" />
+        <action
+            android:id="@+id/action_frg_agregar_docente_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_agregar_periodos"
+        android:name="com.bherher.administrador.frg_agregar_periodos"
+        android:label="fragment_frg_agregar_periodos"
+        tools:layout="@layout/fragment_frg_agregar_periodos" >
+        <action
+            android:id="@+id/action_frg_agregar_periodos_to_periodos"
+            app:destination="@id/periodos" />
+        <action
+            android:id="@+id/action_frg_agregar_periodos_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/frg_agregar_padres"
+        android:name="com.bherher.administrador.frg_agregar_padres"
+        android:label="fragment_frg_agregar_padres"
+        tools:layout="@layout/fragment_frg_agregar_padres" >
+        <action
+            android:id="@+id/action_frg_agregar_padres_to_padres"
+            app:destination="@id/padres" />
+        <action
+            android:id="@+id/action_frg_agregar_padres_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
 </navigation>
